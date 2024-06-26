@@ -1,16 +1,25 @@
 {
   "businessTrips": [
     {
-      "id": 1,
+      "id": "1",
       "destination": "New York",
-      "date": "2024-06-26",
-      "employee": "John Doe"
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "date": "2024-06-26"
     },
     {
-      "id": 2,
+      "id": "2",
       "destination": "San Francisco",
-      "date": "2024-07-15",
-      "employee": "Jane Smith"
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "date": "2024-07-15"
+    },
+    {
+      "id": "c600",
+      "destination": "New York",
+      "name": "Emil Schibli",
+      "email": "bliblablo@sdfsd",
+      "date": "2024-07-06"
     }
   ],
   "meetings": [],

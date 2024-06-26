@@ -13,7 +13,12 @@ const BusinessTrips = () => {
       <h2>Business Trips</h2>
       <ul>
         {trips.map(trip => (
-          <li key={trip.id}>{trip.destination}</li>
+          <li key={trip.id}>
+            <strong>Destination:</strong> {trip.destination} <br />
+            <strong>Name:</strong> {trip.name} <br />
+            <strong>Email:</strong> {trip.email} <br />
+            <strong>Date:</strong> {trip.date}
+          </li>
         ))}
       </ul>
     </div>
