@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 import BusinessTrips from './components/BusinessTrips';
 import AddBusinessTrip from './components/AddBusinessTrip';
-import './App.css';
-
 
 const App = () => (
   <div className="App">
