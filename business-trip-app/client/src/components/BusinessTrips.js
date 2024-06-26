@@ -12,7 +12,7 @@ const BusinessTrips = () => {
     <div>
       <h2>Business Trips</h2>
       <ul>
-        {trips.map(trip => (
+        {trips.slice().reverse().slice(0, 3).map(trip => (
           <li key={trip.id}>
             <strong>Destination:</strong> {trip.destination} <br />
             <strong>Name:</strong> {trip.name} <br />
