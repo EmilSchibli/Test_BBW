@@ -1,4 +1,3 @@
-// src/components/AddBusinessTrip.js
 import React, { useState } from 'react';
 import { addBusinessTrip } from '../services/api';
 

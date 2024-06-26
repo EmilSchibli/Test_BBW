@@ -1,7 +1,19 @@
 {
-    "businessTrips": [],
-    "meetings": [],
-    "flights": [],
-    "employees": []
-  }
-  
+  "businessTrips": [
+    {
+      "id": 1,
+      "destination": "New York",
+      "date": "2024-06-26",
+      "employee": "John Doe"
+    },
+    {
+      "id": 2,
+      "destination": "San Francisco",
+      "date": "2024-07-15",
+      "employee": "Jane Smith"
+    }
+  ],
+  "meetings": [],
+  "flights": [],
+  "employees": []
+}
