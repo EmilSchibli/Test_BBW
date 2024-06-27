@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { addBusinessTrip } from '../services/api';
 
-// Komponente zum Hinzufügen von Geschäftsreisen
 const AddBusinessTrip = () => {
   // Zustandsverwaltung für Formulareingaben
   const [destination, setDestination] = useState('');
