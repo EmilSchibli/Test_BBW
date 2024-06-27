@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { fetchBusinessTrips } from '../services/api';
 
+// Komponente zur Anzeige der Geschäftsreisen
 const BusinessTrips = () => {
+  // Zustandsverwaltung für die Liste der Geschäftsreisen
   const [trips, setTrips] = useState([]);
 
+  // Abrufen der Geschäftsreisedaten bei der ersten Komponentenmethode
   useEffect(() => {
     fetchBusinessTrips().then(data => setTrips(data));
   }, []);
@@ -11,6 +14,7 @@ const BusinessTrips = () => {
   return (
     <div>
       <h2>Business Trips</h2>
+      {/* Ungeordnete Liste zur Anzeige der Geschäftsreisen */}
       <ul>
         {trips.slice().reverse().slice(0, 3).map(trip => (
           <li key={trip.id}>
