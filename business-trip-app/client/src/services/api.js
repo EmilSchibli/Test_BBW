@@ -1,4 +1,3 @@
-// Basis-URL des JSON Servers
 const API_URL = 'http://localhost:3001';
 
 // Funktion zum Abrufen der Geschäftsreisedaten
@@ -15,5 +14,23 @@ export const addBusinessTrip = async (trip) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(trip),
+  });
+};
+
+// Funktion zum Aktualisieren einer Geschäftsreise
+export const updateBusinessTrip = async (trip) => {
+  await fetch(`${API_URL}/businessTrips/${trip.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(trip),
+  });
+};
+
+// Funktion zum Löschen einer Geschäftsreise
+export const deleteBusinessTrip = async (id) => {
+  await fetch(`${API_URL}/businessTrips/${id}`, {
+    method: 'DELETE',
   });
 };

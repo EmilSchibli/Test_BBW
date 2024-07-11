@@ -3,103 +3,238 @@
 /* Allgemeine Stile für die gesamte Seite */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(to bottom right, #141e30, #243b55);
   margin: 0;
   padding: 0;
+  color: #fff;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Header-Stile */
+.header {
+  width: 100%;
+  background-color: #1f2a44;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 /* Stile für den Haupt-Wrapper der App */
-.App {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 600px;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+/* Hero Section */
+.hero {
   width: 100%;
   text-align: center;
-  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #2e3b4e;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
   transition: transform 0.2s;
 }
 
-.App:hover {
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card:hover {
   transform: translateY(-5px);
 }
 
-/* Stile für die Hauptüberschrift */
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 24px;
+/* Form Container */
+.form-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-/* Stile für das Formular */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2e3b4e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Stile für Eingabefelder und Dropdowns */
-input, select {
-  margin-bottom: 15px;
-  padding: 12px;
+form h3 {
+  margin-top: 0;
+}
+
+form input, form select {
+  margin-bottom: 20px;
+  padding: 15px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
-  transition: border-color 0.2s;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-input:focus, select:focus {
+form input:focus, form select:focus {
   border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-/* Stile für den Button */
-button {
-  padding: 12px 20px;
+form button {
+  padding: 15px 25px;
   font-size: 16px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
+form button:hover {
   background-color: #0056b3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Stile für die ungeordnete Liste */
+/* Business Trips Section */
+.BusinessTrips {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.BusinessTrips h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Stile für die Listenelemente */
 ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-/* Stile für Listenelemente */
 li {
-  background-color: #fafafa;
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: left;
-}
-
-/* Stile für hervorgehobenen Text */
-strong {
-  color: #555;
-}
-
-/* Stile für die Liste der Geschäftsreisen */
-.BusinessTrips h2 {
-  color: #333;
+  background-color: #2e3b4e;
   margin-bottom: 20px;
-  font-size: 22px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+  color: #fff;
+}
+
+.trip-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trip-actions button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.trip-actions .edit-button {
+  background-color: #ffc107;
+}
+
+.trip-actions .edit-button:hover {
+  background-color: #e0a800;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.trip-actions .delete-button {
+  background-color: #dc3545;
+}
+
+.trip-actions .delete-button:hover {
+  background-color: #c82333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

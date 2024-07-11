@@ -1,53 +1,11 @@
 {
   "businessTrips": [
     {
-      "id": "1",
-      "destination": "New York",
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "date": "2024-06-26"
-    },
-    {
-      "id": "2",
-      "destination": "San Francisco",
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "date": "2024-07-15"
-    },
-    {
-      "id": "c600",
-      "destination": "New York",
-      "name": "Emil Schibli",
-      "email": "bliblablo@sdfsd",
-      "date": "2024-07-06"
-    },
-    {
-      "id": "305a",
-      "destination": "Miami",
-      "name": "sdf",
-      "email": "sdf@sdfd",
-      "date": "2024-06-05"
-    },
-    {
-      "id": "a687",
-      "destination": "New York",
-      "name": "asd",
-      "email": "emosibli@gmail.com",
-      "date": "2024-07-07"
-    },
-    {
-      "id": "7469",
-      "destination": "Miami",
-      "name": "Emil",
-      "email": "aasda@vfjsaf",
-      "date": "2024-07-07"
-    },
-    {
-      "id": "a7d4",
-      "destination": "",
-      "name": "emil ahjbc",
-      "email": "hsds@adsas",
-      "date": "2024-07-06"
+      "id": "8ffc",
+      "destination": "Chicago",
+      "name": "asdasd",
+      "email": "blabla@gmail.com",
+      "date": "2024-07-25"
     }
   ],
   "meetings": [],

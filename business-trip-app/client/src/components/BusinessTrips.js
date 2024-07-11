@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { fetchBusinessTrips } from '../services/api';
+import { fetchBusinessTrips, deleteBusinessTrip } from '../services/api';
 
 // Komponente zur Anzeige der Geschäftsreisen
-const BusinessTrips = () => {
-  // Zustandsverwaltung für die Liste der Geschäftsreisen
+const BusinessTrips = ({ setEditingTrip }) => {
   const [trips, setTrips] = useState([]);
 
-  // Abrufen der Geschäftsreisedaten bei der ersten Komponentenmethode
   useEffect(() => {
     fetchBusinessTrips().then(data => setTrips(data));
   }, []);
 
+  const handleDelete = (id) => {
+    deleteBusinessTrip(id).then(() => {
+      setTrips(trips.filter(trip => trip.id !== id));
+    });
+  };
+
   return (
-    <div>
+    <div className="BusinessTrips">
       <h2>Business Trips</h2>
-      {/* Ungeordnete Liste zur Anzeige der Geschäftsreisen */}
       <ul>
         {trips.slice().reverse().slice(0, 3).map(trip => (
           <li key={trip.id}>
@@ -22,6 +25,10 @@ const BusinessTrips = () => {
             <strong>Name:</strong> {trip.name} <br />
             <strong>Email:</strong> {trip.email} <br />
             <strong>Date:</strong> {trip.date}
+            <div className="trip-actions">
+              <button className="edit-button" onClick={() => setEditingTrip(trip)}>Edit</button>
+              <button className="delete-button" onClick={() => handleDelete(trip.id)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>
