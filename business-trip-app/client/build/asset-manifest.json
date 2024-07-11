@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Test_BBW/static/css/main.b46394e4.css",
+    "main.js": "/Test_BBW/static/js/main.f4d2938b.js",
+    "static/js/453.419a5d54.chunk.js": "/Test_BBW/static/js/453.419a5d54.chunk.js",
+    "index.html": "/Test_BBW/index.html",
+    "main.b46394e4.css.map": "/Test_BBW/static/css/main.b46394e4.css.map",
+    "main.f4d2938b.js.map": "/Test_BBW/static/js/main.f4d2938b.js.map",
+    "453.419a5d54.chunk.js.map": "/Test_BBW/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b46394e4.css",
+    "static/js/main.f4d2938b.js"
+  ]
+}
